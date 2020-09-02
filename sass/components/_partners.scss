@@ -1,0 +1,61 @@
+.partners {
+  
+
+  & h2 {
+    color: red;
+  }
+
+  & hr {
+    border-color: red;
+  }
+
+  &__title {
+    width: 35%;
+    margin: 0 auto;
+
+    @media screen and (max-width: $bp-large) {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    color: #768692;
+    font-family: $font-medium;
+    padding: 50px 0;
+  }
+
+  &__images {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(min-content, 39rem));
+      justify-content: center;
+      
+      border-top: 1px solid #e6e3e3;
+      border-bottom: 1px solid #e6e3e3;
+
+      @media screen and (max-width: $bp-large) {
+        grid-template-columns: repeat(auto-fit, minmax(min-content, 39rem));
+      }
+      
+
+      & img  {          
+          justify-self: start;
+
+          &:first-of-type, &:nth-of-type(2), &:nth-of-type(3) {
+            border-bottom: 1px solid #e6e3e3;
+
+            @media screen and (max-width: $bp-large) {
+              border-bottom: none;
+            }
+          }
+          
+          &:first-of-type, &:nth-of-type(2), &:nth-of-type(4), &:nth-of-type(5) {
+            border-right: 1px solid #e6e3e3;
+
+            @media screen and (max-width: $bp-large) {
+              border-right: none;
+            }
+          }
+          
+      }
+  }
+}

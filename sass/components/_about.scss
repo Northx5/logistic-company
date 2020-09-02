@@ -1,0 +1,45 @@
+.about {  
+ 
+  &__title {
+    width: 30%;
+    margin: 0 auto;
+
+    @media screen and (max-width: $bp-large) {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    color: #768692;
+    font-family: $font-medium;
+    font-size: 1.8rem;
+  }
+
+  &__link {
+    width: 9em;
+    height: 3em;
+    background-color: #00e5be;
+    border-radius: .3rem;
+    margin: 4rem auto 0;
+    text-align: center;
+    letter-spacing: 3px;
+
+    &:hover {
+      background-color: #00BC9C;
+    }
+    
+    &-text {
+      font-size: 1.2rem;
+      color: #fff;
+      display: block;
+      padding-top: 14px;
+      text-transform: uppercase;
+
+      
+    }
+  }
+
+  h2 {
+    color: red;
+  }
+}

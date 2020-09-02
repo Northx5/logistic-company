@@ -1,0 +1,128 @@
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 86em; // 1376px
+$bp-large: 65em; // 1040px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+$bp-smaller: 24em; // 384px;
+
+
+$font-primary: 'SFPro-reg', sans-serif;
+$font-light: 'SFPro-display-light', sans-serif;
+$font-bold: 'SFPro-display-bold', sans-serif;
+$font-banner: 'SFUIText-Regular', sans-serif;
+$font-heavy: 'SFPro-display-heavy', sans-serif;
+$font-medium: 'SF-Pro-Display-Medium', sans-serif;
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;  
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 1.6rem;
+ 
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+h2 {
+  font-size: 1.3rem;
+  text-align: center;
+
+  @media screen and (max-width: $bp-large) {
+    font-size: 1.2rem;
+    
+  }
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 5rem;
+  margin: 2rem 0;
+  text-align: center;
+  font-family: $font-light;
+
+  @media screen and (max-width: $bp-large) {
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+    margin: 1rem 0;
+    
+  }
+}
+
+hr {
+  border-bottom: 1px solid red;
+  width: 50px;
+  margin: 0 auto 2rem;
+ 
+}
+
+section {
+  padding: 5rem 0;
+}
+
+p {
+  font-size: 1.8rem;
+
+  @media screen and (max-width: $bp-large) {
+    font-size: 1.4rem;
+  }
+
+  
+}
+li {
+  list-style: none;
+}
+
+.wrapper {
+  grid-column: 3 / 11;
+
+  @media screen and (max-width: $bp-large) {
+    grid-column: 1 / -1;
+    padding: 5rem 15px;
+  }
+  
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+
+.slick-dots {
+  bottom:100px!important;
+  left: 412px!important;
+  text-align: left!important;
+  width: 50%;
+
+  @media screen and (max-width: $bp-large) {
+    left: 10px!important;
+  }
+}
+
+.slick-dots li button:before {
+  font-size: 15px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: red;
+}

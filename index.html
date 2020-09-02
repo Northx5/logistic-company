@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logistic</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="scripts/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="scripts/slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script type="text/javascript" src="scripts/slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="scripts/scripts.js" defer></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <section class="banner">
+        
+        <div class="banner__slider">
+          <div class="banner__slider-container">
+            <div class="banner__slider-img">
+              <div class="freight"></div>
+            </div>
+            <h1 class="banner__slider-text">The Target is from you and easy way to achieve from us!</h1>
+            <a class="banner__slider-link" href="#">See Details</a>
+          </div>
+          <div class="banner__slider-container">
+            <div class="banner__slider-img">
+              <div class="freight2"></div>
+            </div>
+            <h1 class="banner__slider-text">The Target is from you and easy way to achieve from us!</h1>
+            <a class="banner__slider-link" href="#">See Details</a>
+          </div>
+          <div class="banner__slider-container">
+            <div class="banner__slider-img">
+              <div class="freight3"></div>
+            </div>
+            <h1 class="banner__slider-text">The Target is from you and easy way to achieve from us!</h1>
+            <a class="banner__slider-link" href="#">See Details</a>
+          </div>
+          <div class="banner__slider-container">
+            <div class="banner__slider-img">
+              <div class="freight4"></div>
+            </div>
+            <h1 class="banner__slider-text">The Target is from you and easy way to achieve from us!</h1>
+            <a class="banner__slider-link" href="#">See Details</a>            
+          </div>          
+        </div>
+
+        <div class="banner__top">
+        <img class="banner__logo" src="images/logo.png" alt="Logo"/>
+
+        <nav class="banner__nav">
+          <ul>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Partners</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
+
+      
+        <nav class="hamburger">
+
+          <div class="hamburger__modal-trigger">
+              <label class="hamburger__modal-label" for="hm">
+                  <div class="hamburger__menu" id="menu-trigger" onclick="javascript:toggleMenu();">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
+              </label>
+              <input class="hamburger__checker" type="checkbox" id="hm" hidden>
+              <div class="modal hamburger__modal" id="hm2">
+                  <div class="hamburger__modal-container">
+  
+                      <header class="hamburger__header">
+                          <label class="hamburger__close" for="hm" onclick="javascript:hamClose();"><i class="fas fa-times"></i></label>
+                      </header>
+  
+                      <!-- <div class="top__seperator"></div> -->
+  
+                      <div class="hamburger__modal-body">
+                        
+                          <ul class="hamburger__lists">
+                            <li class="hamburger__lists-item"><a class="hamburger__lists-item-link" href="#">About Us</a></li>
+                            <li class="hamburger__lists-item"><a class="hamburger__lists-item-link" href="#">Partners</a></li>
+                            <li class="hamburger__lists-item"><a class="hamburger__lists-item-link" href="#">Services</a></li>
+                            <li class="hamburger__lists-item"><a class="hamburger__lists-item-link" href="#">Contact</a></li>
+                              
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </nav>
+          
+
+      </section>
+
+      <section class="wrapper about">
+        <h2>About Us</h2>
+        <div class="about__title">
+          <h3>Together we expanded vision create and make it</h3>
+          <hr />
+        </div>
+        <p class="about__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa
+          mauris, eleifend eget pulvinar ac, feugiat eget diam. Maecenas nec
+          lacinia eros, id tempor nibh. Aenean id cursus ex. Sed eget turpis id
+          lorem vehicula efficitur. Sed venenatis convallis nibh, et suscipit
+          magna pretium non. Donec a turpis et risus pellentesque bibendum.
+          Vestibulum metus dui, varius semper laoreet vel, pretium ut sapien.
+          Duis mauris mauris, congue a euismod sit amet, venenatis ut metus.
+          Proin ac laoreet erat.
+        </p>
+        <div class="about__link">
+          <a class="about__link-text" href="#">Read More</a>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="services__background">
+          <div class="services__title">
+            <h2>Services</h2>
+            <h3>We are a global transportation company</h3>
+            <hr />
+          </div>
+          <div class="services__images">
+            <img src="images/box01.png" alt="Services - Freight" />
+            <span class="services__images-title"><strong>Sea</strong> Freight</span>
+            <img src="images/box02.png" alt="Services - Transportation" />
+            <span class="services__images-title2"><strong>Road</strong> Transportation</span>
+          </div>
+        </div>
+      </section>
+      <section class="wrapper partners">
+        <div class="partners__title">
+          <h2>Partners</h2>
+          <h3>Focused team with a specialized skill set</h3>
+          <hr />
+        </div>
+        <p class="partners__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa
+          mauris, eleifend eget pulvinar ac, feugiat eget diam. Maecenas nec
+          lacinia eros, id tempor nibh. Aenean id cursus ex. Sed eget turpis id
+          lorem vehicula efficitur. Sed venenatis convallis nibh, et suscipit
+          magna pretium non.
+        </p>
+        <div class="partners__images">
+          <img src="images/logo_01.jpg" />
+          <img src="images/logo_02.jpg" />
+          <img src="images/logo_03.jpg" />
+          <img src="images/logo_04.jpg" />
+          <img src="images/logo_05.jpg" />
+          <img src="images/logo_06.jpg" />
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__logo">
+            <img src="images/logo.png" alt="Logo" />
+          </div>
+          <div class="footer__social">
+            <div class="footer__social-img"></div>
+            <div class="footer__social-img"></div>
+            <div class="footer__social-img"></div>
+            <div class="footer__social-img"></div>
+            <div class="footer__social-img"></div>            
+          </div>
+          <hr />
+          <div class="footer__address">
+            <h2 class="footer__header">Headquarter</h2>
+            <p>
+              Büyükşehir Mah. Beylikdüzü Cad. No:22A Beylicium AVM
+              Beylikdüzü/İSTANBUL <p>0090 0212 872 70 70</p> <p> <a href="mailto:info@xxxlogistic.com">info@xxxlogistic.com</a></p></p>
+            </p>
+          </div>
+          <div class="footer__new">
+            <h2 class="footer__header">New Business</h2>
+            <p>Büyükşehir Mah. Beylikdüzü Cad. No:22A Beylicium AVM
+            Beylikdüzü/İSTANBUL <p>0090 0212 872 70 70</p> <p> <a href="mailto:info@xxxlogistic.com">info@xxxlogistic.com</a></p></p>
+          </div>
+
+          <div class="footer__info">
+            <h2 class="footer__header">Information</h2>
+            <ul>
+              <li>About Us</li>
+              <li>Our Services</li>
+              <li>Partners</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="footer__copyright">
+            <p>Copyright © 2020 XXX Logistic. All Rights Reserved.</p>
+          </div>
+          <div class="footer__cookies">
+            <p>This site uses cookie. By continuing to browse this site, you are
+            agreeing to our use of cookies. Find out more here.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+  <script>
+    function toggleMenu() {
+    if ($("#hm2").hasClass("display-none")) {
+      $("#hm2").removeClass("display-none");
+      $("#hm2").addClass("display-grid");
+    }
+  }
+  function hamClose() {
+    if ($("#hm2").hasClass("display-grid")) {
+      $("#hm2").removeClass("display-grid");
+    }
+  }
+  </script>
+</html>
